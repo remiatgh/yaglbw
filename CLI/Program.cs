@@ -2,6 +2,6 @@
 
 Console.WriteLine("Negocin");
 
-ProjectManager projectManager = new();
-await projectManager.ListProjects();
+ProjectsManager projectManager = new();
+projectManager.ListProjects();
 

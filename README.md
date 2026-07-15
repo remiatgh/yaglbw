@@ -1,6 +1,6 @@
 # yaglbw
 
-This is the Yet Another Godot Launcher But Worse, there's a lot of Godot launchers, why not one more?
+This is the Yet Another Godot Launcher But Worse, there's a lot of Godot launchers, so why not one more?
 
 Made with C# on .NET 10
 
