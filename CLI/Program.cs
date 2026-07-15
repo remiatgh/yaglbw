@@ -2,10 +2,6 @@
 
 Console.WriteLine("Negocin");
 
-Teste teste = new();
-teste.SeiLa();
+ProjectManager projectManager = new();
+await projectManager.ListProjects();
 
-foreach (string arg in args)
-{
-    Console.WriteLine(arg);
-}
