@@ -1,1 +1,6 @@
-﻿Console.WriteLine("Hello, World!");
+﻿using Backend;
+
+Console.WriteLine("Negocin");
+
+Teste teste = new();
+teste.SeiLa();
