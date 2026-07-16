@@ -8,6 +8,7 @@ class Program
         {
             ProjectParser projectParser = new();
             projectParser.ParseArgs(args);
+            //File.WriteAllText
         }
     }
 }

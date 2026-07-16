@@ -29,8 +29,14 @@ public class ProjectsManager
             return a;
         }
     }
-
-
+    public void AddProject(string projectPath, string projectName, string godotVersion)
+    {
+        Project[] projects = GetProjects();
+        for (int index = 0; index < projects.Length; index++)
+        {
+            
+        }
+    }
 }
 
 public class Project

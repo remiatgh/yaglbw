@@ -22,6 +22,10 @@ public class ProjectParser
                 }
                 Console.WriteLine("+");
             }
+            else
+            {
+                Console.WriteLine("It looks like you haven't added a project to YAGLBW. Do it. I'm not going to guess it.");
+            }
         }
         else
         {
