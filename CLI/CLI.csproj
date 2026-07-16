@@ -13,7 +13,7 @@
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>yaglbw</ToolCommandName>
     <PackageId>YAGLBW.CLI</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <PackageOutputPath>./nupkg</PackageOutputPath>
   </PropertyGroup>
 
