@@ -27,6 +27,11 @@ public class ProjectParser
                 Console.WriteLine("It looks like you haven't added a project to YAGLBW. Do it. I'm not going to guess it.");
             }
         }
+        else if (args[1] == "add")
+        {
+            ProjectsManager projectsManager = new();
+            projectsManager.AddProject(args[2], args[3], args[4]);
+        }
         else
         {
             Console.WriteLine("Invalid argument: " + args[1]);

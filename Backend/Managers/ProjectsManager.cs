@@ -7,7 +7,7 @@ namespace Backend;
 
 public class ProjectsManager
 {
-    string projectsSavedPath = BackendConsts.YaglbwDataFolderPath + "/projects.json";
+    string projectsSavedPath = BackendConsts.YaglbwDataFolderPath + "/projects.json"; 
     public Project[] GetProjects()
     {
         if (File.Exists(projectsSavedPath))
@@ -29,19 +29,22 @@ public class ProjectsManager
             return a;
         }
     }
-    public void AddProject(string projectPath, string projectName, string godotVersion)
+    public void AddProject(string projectName, string projectPath, string godotVersion)
     {
-        Project[] projects = GetProjects();
-        for (int index = 0; index < projects.Length; index++)
+        Project[] currentProjects = GetProjects();
+        for (int index = 0; index < currentProjects.Length; index++)
         {
-            
+            if (projectName == currentProjects[index].Name)
+            {
+                Console.WriteLine("This name has already been chosen, please, pick a different name." + currentProjects[index].Name);
+                return;
+            }
         }
     }
 }
 
 public class Project
 {
-    public DictionaryBase[] Omg = [];
     public string Name {get; set;} = "";
     public string Path {get; set;} = "";
     public string GodotVersion {get; set;} = "";
